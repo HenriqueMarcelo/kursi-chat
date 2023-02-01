@@ -4,10 +4,12 @@ import Message from '../components/Message'
 
 export default function Chat() {
   return (
-    <div className="container mx-auto px-8 py-6 md:py-8 ">
+    <div className="container mx-auto px-8 py-6 md:py-8 h-screen overflow-hidden flex flex-col ">
       <Header />
 
-      <div className="">
+      <div className="px-2 overflow-y-auto">
+        <h5 className="text-center mb-8">Hoje 11:30</h5>
+
         <Message
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit."
           authorName="Marcelo Henrique"
@@ -26,8 +28,35 @@ export default function Chat() {
           authorName="Marcelo Henrique"
           myself
         />
-        <Input />
+        <Message
+          text="Explica pro Product Onwer que um erro não identificado facilitou a resolução de conflito dos parametros passados em funções privadas."
+          authorName="Marcelo Henrique"
+        />
+        <Message
+          text="Explica pro Product Onwer que um erro não identificado facilitou a resolução de conflito dos parametros passados em funções privadas."
+          authorName="Marcelo Henrique"
+          myself
+        />
+        <Message
+          text="Explica pro Product Onwer que um erro não identificado facilitou a resolução de conflito dos parametros passados em funções privadas."
+          authorName="Marcelo Henrique"
+        />
+        <Message
+          text="Explica pro Product Onwer que um erro não identificado facilitou a resolução de conflito dos parametros passados em funções privadas."
+          authorName="Marcelo Henrique"
+          myself
+        />
+        <Message
+          text="Explica pro Product Onwer que um erro não identificado facilitou a resolução de conflito dos parametros passados em funções privadas."
+          authorName="Marcelo Henrique"
+        />
+        <Message
+          text="Explica pro Product Onwer que um erro não identificado facilitou a resolução de conflito dos parametros passados em funções privadas."
+          authorName="Marcelo Henrique"
+          myself
+        />
       </div>
+      <Input />
     </div>
   )
 }
