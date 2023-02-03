@@ -1,13 +1,22 @@
+import { useEffect, useRef } from 'react'
 import Header from '../components/Header'
 import Input from '../components/Input'
 import Message from '../components/Message'
 
 export default function Chat() {
+  const messagesElemntsRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    messagesElemntsRef.current?.scrollTo(
+      0,
+      Number(messagesElemntsRef.current?.scrollHeight),
+    )
+  }, [])
+
   return (
     <div className="container mx-auto px-8 py-6 md:py-8 h-screen overflow-hidden flex flex-col ">
       <Header />
 
-      <div className="px-2 overflow-y-auto">
+      <div className="px-2 overflow-y-auto" ref={messagesElemntsRef}>
         <h5 className="text-center mb-8">Hoje 11:30</h5>
 
         <Message

@@ -1,3 +1,5 @@
+import { X } from 'phosphor-react'
+
 export default function Header() {
   return (
     <header className="w-100 flex justify-between items-center mb-4">
@@ -11,7 +13,9 @@ export default function Header() {
           <span className="text-xs text-lime-400">Online</span>
         </div>
       </div>
-      <div>x</div>
+      <div>
+        <X size={24} weight="fill" />
+      </div>
     </header>
   )
 }
